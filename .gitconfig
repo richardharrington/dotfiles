@@ -1,0 +1,22 @@
+[user]
+	name = Richard Harrington
+	email = harrington.richard@gmail.com
+[core]
+	excludesfile = /Users/richardharrington/.gitignore_global
+	autocrlf = input
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+
+[color] 
+        ui = auto 
+        branch = auto 
+        status = auto 
+        diff = auto
+[alias]
+	lg = log --oneline --decorate --all --graph -30
+[push]
+	default = simple

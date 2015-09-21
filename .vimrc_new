@@ -1,0 +1,56 @@
+execute pathogen#infect()
+
+"disable the annoying recording macro
+nmap q :echo<CR>
+
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
+nmap <C-h> <C-w>h
+
+imap jj <C-c>
+cmap jj <C-c>
+
+vmap <C-E> :Eval<Return>
+nmap <C-E> :Eval
+"vmap K <C-y><C-y>
+"nmap J <C-e><C-e>
+"nmap K <C-y><C-y>
+vmap <C-c> "+y
+nmap <C-v> "+P
+cmap ,v tabe ~/.vimrc 
+cmap ,w e $VIM/_vimrc 
+"cmap ,s e ~/.vim/after/ftplugin/cpp_snippets.vim
+"hi MBEVisibleNormal guibg=blue guifg=white
+
+set ai
+set nowrap
+set foldmethod=marker
+set hls
+set ts=4
+set sw=4
+set expandtab
+set ic
+syn on
+set number
+set guioptions=br
+set nu
+set ruler
+set is
+set visualbell
+set hl=vr
+set ft=c
+set printoptions=syntax:y,number:y
+
+filetype on
+filetype plugin indent on
+cmap :: shell<CR>
+
+autocmd FileType c,cpp :set cindent
+"insert date
+"cmap ,d <CR>Ojj:.!date +"=== \%d.\%m.\%Y - \%H:\%M:\%S (\%A) ==="<CR>o
+"switch to shell
+"make
+set exrc
+set autowrite
+"set lines=40 columns=150
