@@ -1,0 +1,28 @@
+Things to add
+
+— XCode command line tools (just try to run git)
+— leiningen
+— git
+— silver searcher
+— Dash
+— all the emacs stuff
+— yes, sublime text
+— Karabiner
+— Microsoft keyboard preference pane
+— seil? (to remap caps lock)
+
+— fork prelude. add my own stuff.
+
+— dotfiles:
+
+   — emacs
+   — vim
+   — git
+   — bash
+   — lein
+
+— set up ssh keys on bitbucket
+
+
+— node
+— nvm
