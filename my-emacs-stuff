@@ -1,0 +1,13 @@
+(defun my-set-comment-syntax ()
+    (setq-local comment-start "; ")
+    (setq-local comment-end ""))
+
+(defun my-cider-send-last-sexp-to-repl-and-eval ()
+    "inserts into repl, evals there, then returns to original window"
+    (interactive)
+    (save-selected-window
+                              (my-set-comment-syntax)
+          (setq current-prefix-arg '(4)) ; C-u
+          (call-interactively 'cider-insert-last-sexp-in-repl)))
+
+(global-set-key (kbd "C-x C-.") 'my-cider-send-last-sexp-to-repl-and-eval)
