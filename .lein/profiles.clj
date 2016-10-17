@@ -1,5 +1,4 @@
 {:user
- {:dependencies [[org.clojure/tools.namespace "0.2.3"]]
-  :plugins [[lein-midje "3.1.0"]
-            [cider/cider-nrepl "0.10.0-SNAPSHOT"]]
+ {:dependencies [[org.clojure/tools.namespace "0.2.11"]]
+  :plugins [[cider/cider-nrepl "0.14.0"]]
   :injections [(require '(clojure.tools.namespace repl find))]}}
